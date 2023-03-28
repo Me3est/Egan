@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <title>Document</title>
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
      <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/header_search.js"></script>
-     <link rel="stylesheet" href="../css/login.css ">
-    <link rel="stylesheet" href="../css/egan_header.css ">
-    <link rel="stylesheet" href="../css/header_search.css ">
-    <link rel="stylesheet" href="../css/h_f_r.css ">
+    <script defer src="./js/h_f.js"></script>
+    <script defer src="./js/header_search.js"></script>
+     <link rel="stylesheet" href="./css/login.css ">
+    <link rel="stylesheet" href="./css/egan_header.css ">
+    <link rel="stylesheet" href="./css/header_search.css ">
+    <link rel="stylesheet" href="./css/h_f_r.css ">
 </head>
 <body>
 <div class="model_background">
@@ -27,58 +27,45 @@
         </div>
     </div>
 </div>
-
 <!-- 헤더 -->
 <div class="header">
     <div class="content_area">
-        <!-- 햄버거 버튼 -->
-        <div class="ham_box">
-            <div class="ham_line" id="line_top"></div>
-            <div class="ham_line" id="line_mid"></div>
-            <div class="ham_line" id="line_bot"></div>
-            <div class="ham_menu">
-                <ul class="ham_ul">
-                    <c:if test="${m_id != null}">
-                        <li> <a href="http://localhost:8080/egan/logout.do">Logout</a></li>
-                        <li><a href="http://localhost:8080/egan/myPage">MyPage</a></li>
-                    </c:if>
-
-                    <c:if test="${m_id == null}">
-                        <li><a href="http://localhost:8080/egan/login">Login</a></li>
-                        <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
-                    </c:if>
-                    <li class="hr"></li>
-                    <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
-                    <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
-                    <li><a href="http://localhost:8080/egan/brand">COMMUNITY</a></li>
-
-                </ul>
-            </div>
+      <!-- 햄버거 버튼 -->
+      <div class="ham_box">
+        <div class="ham_line" id="line_top"></div>
+        <div class="ham_line" id="line_mid"></div>
+        <div class="ham_line" id="line_bot"></div>
+        <div class="ham_menu">
+          <ul class="ham_ul">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="real_register.html">Register</a></li>
+            <li class="hr"></li>
+            <li><a href="detail.html">SHOP</a></li>
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="brand.html">COMMUNITY</a></li>
+          </ul>
         </div>
-
-        <div class="logo">
-            <a href="http://localhost:8080/egan/main">Egan</a>
+      </div>
+      <div class="logo">
+        <a href="main.html">Egan</a>
+      </div>
+      <div class="nav">
+        <a href="detail.html">SHOP</a>
+        <a href="brand.html">BRAND</a>
+        <a href="brand.html">COMMUNITY</a>
+      </div>
+      <div class="menu">
+        <div class="h_menu">
+            <a href="login.html">Login</a>
+            <a href="real_register.html">Register</a>
         </div>
-
-        <div class="nav">
-            <a href="http://localhost:8080/egan/detail">SHOP</a>
-            <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
+        <div class="h_icon">
+          <div class="shopping"></div>
+          <div class="search"></div>
         </div>
-
-        <div class="menu">
-            <div class="h_menu">
-          <a href="http://localhost:8080/egan/login">Login</a>
-          <a href="http://localhost:8080/egan/real_register">Register</a>
-            </div>
-            <div class="h_icon">
-                <div class="shopping"></div>
-                <div class="search"></div>
-            </div>
-        </div>
-
+      </div>
     </div>
-</div>   
+  </div>
 <div class="wrap">
     <div class="login_text">로그인</div>
     <input type="text" id="m_id" class="id" placeholder="아이디를 입력 해주세요.">

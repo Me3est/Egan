@@ -28,32 +28,32 @@
 </head>
 <body>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); 
+    @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); 
         @font-face {
             font-family: 'time';
             src: local('fonts/TimesNewRomancRegular'),
-            url('/font/timesbd.ttf')format('truetype');
+            url('./font/timesbd.ttf')format('truetype');
             font-family: 'Gaegu', cursive;
         }
         @font-face {
             font-family: 'nanum';
             src: local('fonts/NanumBarunGothic.ttf'),
-            url('/font/NanumBarunGothic.ttf')format('truetype');
+            url('./font/NanumBarunGothic.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum-light';
             src: local('fonts/NanumBarunGothicLight.ttf'),
-            url('/font/NanumBarunGothicLight.ttf')format('truetype');
+            url('./font/NanumBarunGothicLight.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum강부장';
             src: local('fonts/나눔손글씨 강부장님체.ttf'),
-            url('/font/나눔손글씨 강부장님체.ttf')format('truetype');
+            url('./font/나눔손글씨 강부장님체.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum가람';
             src: local('fonts/나눔손글씨 가람연꽃.ttf'),
-            url('/font/나눔손글씨 가람연꽃.ttf')format('truetype');
+            url('./font/나눔손글씨 가람연꽃.ttf')format('truetype');
         }
     </style>
 </head>
@@ -72,42 +72,42 @@
 <!-- 헤더 -->
 <div class="header">
     <div class="content_area">
-        <!-- 햄버거 버튼 -->
-        <div class="ham_box">
-            <div class="ham_line" id="line_top"></div>
-            <div class="ham_line" id="line_mid"></div>
-            <div class="ham_line" id="line_bot"></div>
-            <div class="ham_menu">
-                <ul class="ham_ul">
-                    <li><a href="http://localhost:8080/egan/login">Login</a></li>
-                    <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
-                    <li class="hr"></li>
-                    <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
-                    <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
-                    <li><a href="http://localhost:8080/egan/brand">COMMUNITY</a></li>
-                </ul>
-            </div>
+      <!-- 햄버거 버튼 -->
+      <div class="ham_box">
+        <div class="ham_line" id="line_top"></div>
+        <div class="ham_line" id="line_mid"></div>
+        <div class="ham_line" id="line_bot"></div>
+        <div class="ham_menu">
+          <ul class="ham_ul">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="real_register.html">Register</a></li>
+            <li class="hr"></li>
+            <li><a href="detail.html">SHOP</a></li>
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="brand.html">COMMUNITY</a></li>
+          </ul>
         </div>
-        <div class="logo">
-            <a href="http://localhost:8080/egan/main">Egan</a>
+      </div>
+      <div class="logo">
+        <a href="main.html">Egan</a>
+      </div>
+      <div class="nav">
+        <a href="detail.html">SHOP</a>
+        <a href="brand.html">BRAND</a>
+        <a href="brand.html">COMMUNITY</a>
+      </div>
+      <div class="menu">
+        <div class="h_menu">
+            <a href="login.html">Login</a>
+            <a href="real_register.html">Register</a>
         </div>
-        <div class="nav">
-            <a href="http://localhost:8080/egan/detail">SHOP</a>
-            <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
+        <div class="h_icon">
+          <div class="shopping"></div>
+          <div class="search"></div>
         </div>
-        <div class="menu">
-            <div class="h_menu">
-                    <a href="http://localhost:8080/egan/login">Login</a>
-                    <a href="http://localhost:8080/egan/real_register">Register</a>
-            </div>
-            <div class="h_icon">
-                <div class="shopping"></div>
-                <div class="search"></div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
 <div class="main_box">
     <div class="contain">
         <div class="main">
@@ -123,7 +123,6 @@
                         <div class="rd7_txt">회원정보 변경</div>
                         <div class="rd7_txt">배송지 관리</div> -->
                     </div>
-
                     <div class="show_info_box"><label for="rd5">쿠폰</label></div>
                     <div class="show_info_box">다음달 예상등급 ></div>
                     <div class="show_info_box"><label for="rd1">주문내역</label></div>

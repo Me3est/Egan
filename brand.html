@@ -6,46 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script defer src="../js/brand.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/topBtn.js"></script>
-    <script defer src="../js/header_search.js"></script>
-    <link rel="stylesheet" href="../css/egan_header.css ">
-    <link rel="stylesheet" href="../css/header_search.css ">
-    <link rel="stylesheet" href="../css/h_f_r.css ">
-    <link rel="stylesheet" href="../css/brand.css ">
-    <link rel="stylesheet" href="../css/brand_r.css ">
-    <link rel="stylesheet" href="../css/brand_header.css ">
+    <script defer src="./js/brand.js"></script>
+    <script defer src="./js/h_f.js"></script>
+    <script defer src="./js/topBtn.js"></script>
+    <script defer src="./js/header_search.js"></script>
+    <link rel="stylesheet" href="./css/egan_header.css ">
+    <link rel="stylesheet" href="./css/header_search.css ">
+    <link rel="stylesheet" href="./css/h_f_r.css ">
+    <link rel="stylesheet" href="./css/brand.css ">
+    <link rel="stylesheet" href="./css/brand_r.css ">
+    <link rel="stylesheet" href="./css/brand_header.css ">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
             font-family: 'time';
             src: local('fonts/TimesNewRomancRegular'),
-            url('/font/timesbd.ttf')format('truetype');
+            url('./font/timesbd.ttf')format('truetype');
             font-family: 'Gaegu', cursive;
         }
         @font-face {
             font-family: 'nanum';
             src: local('fonts/NanumBarunGothic.ttf'),
-            url('/font/NanumBarunGothic.ttf')format('truetype');
+            url('./font/NanumBarunGothic.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum-light';
             src: local('fonts/NanumBarunGothicLight.ttf'),
-            url('/font/NanumBarunGothicLight.ttf')format('truetype');
+            url('./font/NanumBarunGothicLight.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum강부장';
             src: local('fonts/나눔손글씨 강부장님체.ttf'),
-            url('/font/나눔손글씨 강부장님체.ttf')format('truetype');
+            url('./font/나눔손글씨 강부장님체.ttf')format('truetype');
         }
         @font-face {
             font-family: 'nanum가람';
             src: local('fonts/나눔손글씨 가람연꽃.ttf'),
-            url('/font/나눔손글씨 가람연꽃.ttf')format('truetype');
+            url('./font/나눔손글씨 가람연꽃.ttf')format('truetype');
         }
     </style>
 </head>
-
 <body>
 <div class="model_background">
     <div class="close" ></div>
@@ -58,50 +57,45 @@
         </div>
     </div>
 </div>
-
 <!-- 헤더 -->
 <div class="header">
     <div class="content_area">
-        <!-- 햄버거 버튼 -->
-        <div class="ham_box">
-            <div class="ham_line" id="line_top"></div>
-            <div class="ham_line" id="line_mid"></div>
-            <div class="ham_line" id="line_bot"></div>
-            <div class="ham_menu">
-                <ul class="ham_ul">
-                        <li><a href="http://localhost:8080/egan/login">Login</a></li>
-                        <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
-                    <li class="hr"></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">BRAND</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
-                </ul>
-            </div>
+      <!-- 햄버거 버튼 -->
+      <div class="ham_box">
+        <div class="ham_line" id="line_top"></div>
+        <div class="ham_line" id="line_mid"></div>
+        <div class="ham_line" id="line_bot"></div>
+        <div class="ham_menu">
+          <ul class="ham_ul">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="real_register.html">Register</a></li>
+            <li class="hr"></li>
+            <li><a href="detail.html">SHOP</a></li>
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="brand.html">COMMUNITY</a></li>
+          </ul>
         </div>
-
-        <div class="logo">
-            <a href="http://localhost:8080/egan/main">Egan</a>
+      </div>
+      <div class="logo">
+        <a href="main.html">Egan</a>
+      </div>
+      <div class="nav">
+        <a href="detail.html">SHOP</a>
+        <a href="brand.html">BRAND</a>
+        <a href="brand.html">COMMUNITY</a>
+      </div>
+      <div class="menu">
+        <div class="h_menu">
+            <a href="login.html">Login</a>
+            <a href="real_register.html">Register</a>
         </div>
-
-        <div class="nav">
-            <a href="http://localhost:8080/egan/detail">SHOP</a>
-            <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="">COMMUNITY</a>
+        <div class="h_icon">
+          <div class="shopping"></div>
+          <div class="search"></div>
         </div>
-
-        <div class="menu">
-            <div class="h_menu">
-                    <a href="http://localhost:8080/egan/login">Login</a>
-                    <a href="http://localhost:8080/egan/real_register">Register</a>
-            </div>
-            <div class="h_icon">
-                <div class="shopping"></div>
-                <div class="search"></div>
-            </div>
-        </div>
-
+      </div>
     </div>
-</div>
+  </div>
 <div class="main">
     <div class="box banner ">
         <div class="txt_box">
@@ -251,8 +245,6 @@
                 <p class="f_b_txt">COPYRIGHT @ EGAN . ALL RIGHTS</p>
             </div>
         </div>
-
-
     </div>
 </div>
 </div>
