@@ -1,0 +1,341 @@
+
+
+
+.main{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* 메인베너 */
+
+.main_banner {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.vi_text{
+  position: absolute;
+  top: 25%; left: 15%;
+  font-size: 40px;
+  color: #ffff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.vi_text div:nth-child(2) {
+  margin-left: 20px;
+}
+
+.vi_link{
+  position: absolute;
+  top: 38%; left: 15%;
+  margin: 20px 0;
+  margin-left: 20px;
+  color: #ffff;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #ffff;
+  padding: 5px 20px;
+}
+
+
+/* Best상품 */
+
+.best_article {
+  width: 100%;
+  height: 400px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.b_article{
+  width: 30%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.b_article_img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/skin/21.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.best_product{
+  width: 70%;
+  height: 100%;
+  padding: 0 60px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+
+.best_title {
+  width: 50px;
+  /* height: 20px; */
+  margin: 5px 0;
+}
+
+.title_high {
+  background-color: #fcd64c;
+  color: #ffff;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 1px;
+  display: inline-block;
+}
+
+.descri {
+  font-size: 10px;
+  font-weight: 900;
+  color: rgb(118, 118, 118);
+}
+
+.best_slide {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+}
+
+.slide_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide_wrap.animated {
+  transition : all 0.5s ease-out;
+}
+
+.b_slide_img {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 5px 0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.slide_wrap div:last-child{
+  margin: 0;
+  /* 슬라이드의 마지막에게는 마진 뺌
+      다른 슬라이드들은 마진 30px 줌
+  */
+}
+
+.b_slide_img > div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.b_slide_img:hover #b_img {
+  filter: brightness(70%);
+}
+
+.slide1{
+  background: url(../img/skin/16-1.jpg);
+}
+.slide2 {
+  background: url(../img/daily/16.jpg);
+}
+.slide3 {
+  background: url(../img/daily/11-1.jpg);
+}
+.slide4 {
+  background: url(../img/skin/7.jpg);
+}
+.slide5 {
+  background: url(../img/food/17.jpg);
+}
+.slide6 {
+  background: url(../img/food/15-1.jpg)
+}
+
+.b_slide_img:hover #b_img {
+  filter: brightness(70%);
+}
+
+#b_img {
+  position: relative;
+}
+
+#b_img > div {
+  position: absolute;
+  top: 50%;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 25px;
+  opacity: 0;
+  transition: all .5s ;
+  font-weight: 900;
+  color: aliceblue;
+}
+
+.b_slide_img:hover > #b_img > div {
+  opacity: 1;
+}
+
+.prev_btn,.next_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  text-shadow: 5px 2px 2px darkgrey;
+  color: #fcd64c;
+  cursor: pointer;
+}
+
+
+.prev_btn {
+  left: 0;
+  top: 50%;
+}
+
+.next_btn {
+  right: 0;
+  top: 50%;
+}
+
+.prev_btn:hover,.next_btn:hover {
+  font-size: large;
+}
+
+/* 채식구 베너 */
+
+.chae-sicku_banner{
+  width: 100%;
+  height: 350px;
+  background-image: url(../img/food/21.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.chea_text {
+  position: absolute;
+  top:30%; left: 25%;
+  color: #ffff;
+  font-family:'kopub','serif';
+  font-size: 13px;
+}
+
+.chea_text div:nth-child(1) {
+  font-size: 40px;
+}
+
+/* MD 상품 */
+
+.md_product {
+    width: 100%;
+    height: 700px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 50px 0;
+    margin-bottom: 150px;
+}
+
+.md_title {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 10px;
+}
+
+.md_ProTitle {
+  width: 75px;
+  margin: 10px 0;
+}
+
+.md_Pro {
+    width: 100%;
+    /* height: 350px; */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.mdPro_article {
+    width: calc(100% / 3);
+    height: 0px;
+}
+
+.mdProArticle_img {
+    width: 100%;
+    /* height: 100%; */
+    /* border: 10px solid #ffff; */
+    box-sizing: border-box;
+    gap: 20px;
+} 
+
+.mdimg1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/daily/9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+
+.mdimg2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/skin/9-1.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+
+.mdimg3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/food/19-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+
+.md_descri {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.mdDes {
+  font-size: 10px;
+}
+
+.mdDes div:nth-child(1) {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.mdDes div:nth-child(2) {
+  font-weight: 900;
+  font-size: 10px;
+}
+

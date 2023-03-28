@@ -1,0 +1,38 @@
+
+/* //////////////     헤더    //////////////// */
+.header {
+    background: transparent;
+    /*border-bottom: 1px solid rgb(137, 137, 137);*/
+    transition: background 0.3s;
+}
+
+.ham_line{
+    background-color: white;
+}
+.logo {
+    color: white;
+
+}
+.logo > a {
+    color: white;
+}
+
+.nav>a {
+    color: white;
+}
+.h_menu>a {
+    color: white;
+}
+
+.h_menu::after {
+    border-right: 1px solid #989898;
+}
+
+
+.shopping {
+    background: url(../img/장바구니_white.png)no-repeat center / 20px;
+}
+
+.search {
+    background: url(../img/h_검색2.png)no-repeat center / 20px;
+}

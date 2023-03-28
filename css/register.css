@@ -1,0 +1,223 @@
+/* 회원가입폼 */
+.register_title{
+    font-weight: 600;
+}
+.register_main {
+    width: 100%;
+    max-width: 700px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    margin: 100px auto 90px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.reg_title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'nanum';
+}
+.register_title p:nth-child(2) {
+    font-size: 12px;
+    text-align: right;
+}
+.registerForm {
+    padding-top: 20px;
+    border-top: 1px solid #939393;
+    box-sizing: border-box;
+}
+.reg_txt {
+    display: block;
+    width: 160px;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+
+.reg_input_txt {
+    width: 280px;
+    height: 40px;
+}
+input {outline: none;}
+#birth_date {
+    width: 80px;
+    height: 40px;
+}
+#bir_month {
+    width: 80px;
+    height: 46px;
+}
+.reg_input {
+    position: relative;
+}
+/* msg */
+
+.msg {
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: left;
+    color: red;
+    font-size: 15px;
+    font-weight: 900;
+}
+/* 버튼 */
+#id_chk, #email_chk, #number_chk {
+    width: 115px;
+    height: 43px;
+    background: #fff;
+    color: #FFE178;
+    color: #ffbf00;
+    border: 1px solid #FFBF00;
+    margin-left: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+#address {
+    width: 330px;
+    height: 20px;
+    margin-top: 15px;
+    
+}
+#postcode {height: 20px}
+#address_btn {
+width: 96px;
+    height: 27px;
+    background: #fff;
+    color: #FFBF00;
+    border: 1px solid #FFBF00;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0px;
+    margin: 5px 0 0 5px;
+    font-weight: 600;
+}
+#register_btn {
+    display: block;
+    width: 300px;
+    height: 60px;
+    background: #FFBF00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 45px auto 0;
+    font-weight: 600;
+}
+input {
+    outline: none;
+}
+.ui-datepicker-calendar {
+    display: inline !important;
+}
+#from_date {
+    width: 280px;
+    height: 40px;
+}
+/* 라디오버튼 css */
+input[type=radio] {
+    accent-color:#ad8b17;
+}
+
+/* 중요표시 */
+.redStar {
+    color: #fdd441;
+}
+/* 반응형 */
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+    .register_main {
+        max-width: 600px;
+    }
+    .reg_title {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .reg_txt {
+        width: 135px;
+        font-size: 14px;
+    }
+    .reg_input_txt {
+        width: 225px;
+        height: 32px;
+    }
+    #id_chk, #email_chk, #number_chk {
+        width: 95px;
+        height: 38px;
+        font-size: 11px;
+        font-weight: 900;
+    }
+    #address {
+        width: 225px;
+        height: 20px;
+    }
+    #postcode {
+        height: 20px;
+    }
+    #address_btn {
+        width: 65px;
+        height: 30px;
+    }
+    #from_date {
+        width: 225px;
+        height: 32px;
+    }
+
+    #register_btn {
+        width: 250px;
+        height: 50px;
+        margin: 25px auto 0;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    input:-ms-input-placeholder {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .register_main {
+        max-width: 420px;
+    }
+    .reg_txt {
+       width: 95px;
+        font-size: 13px;
+        padding: 0;
+    }
+    .reg_input_txt {
+        width: 155px;
+        height: 30px;
+    }
+    #id_chk, #email_chk, #number_chk {
+        width: 66px;
+        height: 37px;
+        font-size: 10px;
+        font-weight: 900;
+    }
+    #address {
+        width: 155px;
+        height: 20px;
+    }
+    #postcode {width: 85px}
+
+    #from_date {
+        width: 155px;
+        height: 30px;
+    }
+    input::placeholder {
+        font-size: 11px;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 11px;
+    }
+    input:-ms-input-placeholder {
+        font-size: 11px;
+    }
+}

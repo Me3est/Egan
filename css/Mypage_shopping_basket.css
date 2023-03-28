@@ -1,0 +1,96 @@
+
+/* 계산 */
+.box {
+    position: relative;
+}
+.btn_updown {
+    width: 30px;
+    height: 30px;
+}
+.letf{
+position: absolute;
+    left: 600px;
+    top: 60px;
+}
+.right{
+    position: absolute;
+    left: 660px;
+    top: 60px;
+}
+#txt_qty {
+    left: 150px;
+    position: absolute;
+    left: 630px;
+    top: 60px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+#o_price{
+    display: none;
+}
+.result{
+    position: absolute;
+    left:850px;
+    top:60px;
+}
+.product_delect{
+    position: absolute;
+    left:950px;
+    top:53px;
+    color: rgb(230, 218, 218);
+    font-size: 25px;
+    font-weight: 100;
+}
+/* 체크박스 */
+.chk {
+float: left;
+    display: inline-block;
+    margin-top: 75px;
+    margin-left: 21px;
+    width: 15px;
+    height: 15px;
+}
+.chk_all_box{
+    width:calc(100% - 200px);
+    margin-top:10px;
+    padding-bottom: 20px;
+    float: right;
+}
+.chk_all{
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+/*  상품 설명*/
+.product_description{
+    position: absolute;
+    left:250px;
+    top:65px;
+}
+.sum{
+    height: 50px;
+    margin-top:30px;
+    margin-left: 100px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.payment{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 400px;
+    background-color: #FFBF00;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: aliceblue;
+}

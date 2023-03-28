@@ -1,0 +1,642 @@
+/* 로그인 팝업 */
+.logChk_popup {
+    width: 420px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+    border-radius: 10px;
+}
+.logChk_txt {
+    /* padding-top: 30px; */
+    box-sizing: border-box;
+}
+.logChk_txt p {
+    color: rgb(96, 95, 95);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    /* font-weight: 600; */
+    font-size: 16px;
+    /* margin: 0; */
+}
+.logChk_btn {margin-top:10px;}
+#log_cancle_btn {
+    width: 130px;
+    height: 50px;
+    border: 1px solid;
+    background: #fff;
+    color: #ffbf00;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#logChk_commit_btn {
+    width: 130px;
+    height: 52px;
+    border: 1px solid;
+    background: #ffbf00;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* 장바구니 팝업 */
+.cart_popup {
+    width: 403px;
+    height: 191px;
+    background: #fff;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    padding: 11px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cart_txt {
+    box-sizing: border-box;
+    margin: 25px 0 0 0;
+    font-size: 18px;
+}
+.cart_btn {
+   margin: 20px 0;
+}
+.cart_txt p {
+    font-size: 15px;
+    /* font-weight: 600; */
+    margin-bottom: 8px;
+}
+#cart_stay_btn {
+   width: 40%;
+    height: 50px;
+    border: 1px solid;
+    background: #fff;
+    border: none;
+    background: transparent;
+    color: #ffbf00;
+    /* border-right: 1px solid white; */
+    background: white;
+    border: 1px solid #ffbf00;
+    color: #ffbf00;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#cart_commit_btn {
+       width: 40%;
+    height: 50px;
+    margin-left: 5px;
+    /* border: 1px solid; */
+    border: none;
+    background: transparent;
+    color: #fff;
+    background: #FFBF00;
+    font-size: 14px;
+    border-radius: 5px;
+    font-family: 'nanum';
+    font-weight: 600;
+}
+
+/* 작성중 취소 팝업 */
+.wrt_chk_pop {
+    width: 450px;
+    height: 250px;
+    background: #fff;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    /* padding: 30px 0; */
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+.wrt_chk_title {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.wrt_chk_title p {
+    color: rgb(96, 95, 95);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+}
+#wrt_cancle_btn {
+    width: 130px;
+    height: 50px;
+    border: 1px solid;
+    box-sizing: border-box;
+    background: #fff;
+    color: #ffbf00;
+    font-size: 16px;
+}
+#wrt_keep_going_btn {
+    width: 130px;
+    height: 50px;
+    border: 1px solid;
+    box-sizing: border-box;
+    background: #ffbf00;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* 리뷰 팝업 */
+.review_popup {
+margin: 0 auto;
+    width: 700px;
+    height: 600px;
+    /* border-radius: 10px; */
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    border-radius: 10px;
+    padding: 45px;
+    box-sizing: border-box;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+.rv_popup_txt_title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.review_item_box {
+    margin: 10px 0;
+    padding: 10px 0;
+    line-height: 100px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(41, 40, 40, 0.3);
+    border-bottom: 1px solid rgba(41, 40, 40, 0.3);
+    display: flex;
+    gap: 30px;
+}
+.item_img {
+    width: 50px;
+    height: 50px;
+}
+.item_img img {
+    width: 100%;
+    height: 100%;
+}
+/* 인풋 스타일 */
+.review_input_box {
+    /* padding: 15px; */
+    margin: 25px 0;
+    box-sizing: border-box;
+}
+.rv_input_title {
+display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 40px;
+}
+#review_title {
+    width: 700px;
+    height: 40px;
+    width: calc(100% - 100px);
+    outline: none;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.rv_input_main {
+    display: flex;
+}
+#review_main {
+/*!*width: 700px; *!*/
+/*    width: 500px;*/
+    width: calc(100% - 100px);
+    height: 200px;
+    outline: none;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.rv_input_title p,
+.rv_input_main p {
+width: 80px;
+    line-height: 30px;
+    /* color: rgb(103, 102, 102); */
+    font-weight: 700;
+    font-family: 'nanum';
+    text-align: center;
+/*     line-height: 190px; */
+
+}
+.rv_input_main > p {
+ line-height: 200px;
+}
+.rv_input_title p {
+    margin: 25px 0;
+    line-height: 0;
+    font-family: 'nanum';
+    width: 80px;
+}
+.review_btn_box {
+    text-align: center;
+}
+#review_cancle_btn {
+width: 180px;
+    height: 60px;
+    color: #ffbf00;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ffbf00;
+    border-radius: 5px;
+        margin-right: 7px;
+}
+#review_commit_btn {
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    font-size: 15px;
+    background: #ffbf00;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 문의 팝업창 */
+.qna_popup {
+   margin: 0 auto;
+    width: 700px;
+    height: 600px;
+    /* border-radius: 10px; */
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    border-radius: 10px;
+    padding: 45px;
+    box-sizing: border-box;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+.qna_popup_txt_title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.qna_item_box {
+  margin: 10px 0;
+    padding: 10px 0;
+    line-height: 100px;
+    line-height: 100px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(41, 40, 40, 0.3);
+    border-bottom: 1px solid rgba(41, 40, 40, 0.3);
+    display: flex;
+    gap: 30px;
+}
+.item_img {
+    width: 100px;
+    height: 100px;
+}
+.item_img img {
+    width: 100%;
+    height: 100%;
+}
+.item_title{
+    font-family: 'nanum-light';
+    font-weight: 600;
+}
+/* 인풋 스타일 */
+.qna_input_box {
+    padding: 15px;
+    box-sizing: border-box;
+/*     margin-top: 25px; */
+}
+.qna_input_title {
+    display: flex;
+/*     margin-bottom: 25px; */
+}
+#qna_popup_title {
+    width: calc(100% - 100px);
+    height: 40px;
+    outline: none;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.qna_input_main {
+    display: flex;
+}
+.qna_input_main > p{
+            line-height: 150px;
+}
+#qna_popup_main {
+    width: calc(100% - 100px);
+    height: 200px;
+    outline: none;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.qna_input_title p,
+.qna_input_main p {
+width: 60px;
+    line-height: 40px;
+    /* color: rgb(103, 102, 102); */
+    font-weight: 700;
+    font-family: 'nanum';
+    width: 80px;
+    text-align: center;
+}
+.qna_input_main p {
+    margin: 25px 0;
+    font-family: 'nanum';
+    line-height: 0;
+    width: 80px;
+    text-align: center;
+}
+.qna_btn_box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+        margin-top: 10px;
+}
+#qna_cancle_btn {
+    width: 180px;
+    height: 60px;
+    color: #ffbf00;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ffbf00;
+    border-radius: 5px;
+        font-weight: 600;
+    margin-left: 20px;
+}
+#qna_commit_btn {
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    font-size: 15px;
+    background: #ffbf00;
+    border: none;
+    border-radius: 5px;
+        font-weight: 600;
+}
+.scr_chk_box {
+width: 140px;
+    font-size: 14px;
+    /* line-height: 0px; */
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    height: 40px;
+    margin: 10px 0;
+    /* padding: 0 10px; */
+    border-radius: 3px;
+}
+
+
+#qna_secret_pw {
+    width: 70px;
+    outline: none;
+    border: 1px solid rgba(41, 40, 40, 0.3);
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+/* layer */
+.layer {
+    width: 100%;
+    height: 100%;
+    background: rgba(104, 104, 104, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow-y: hidden;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px){
+    /* 리뷰 팝업 */
+    .review_popup {
+        width: 650px;
+    }
+    #review_title {
+        width: 470px;
+    }
+    .review_item_box {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    #review_main {
+        width: 470px;
+        height: 300px;
+    }
+    #review_cancle_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+    #review_commit_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+    /* 문의 팝업 */
+    .qna_popup {
+        width: 650px;
+    }
+    #qna_popup_title {
+        width: 470px;
+    }
+    .qna_item_box {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    #qna_popup_main {
+        width: 470px;
+        height: 300px;
+    }
+    #qna_cancle_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+    #qna_commit_btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .qna_btn_box {
+        gap: 6px;
+    }
+    .scr_chk_box {
+        width: 130px;
+        font-size: 13px;
+        line-height: 20px;
+        gap: 7px;
+    }
+}
+@media screen and (max-width: 480px){
+    /* 로그인 팝업 */
+    .logChk_popup {
+/*         width: 380px;
+        height: 240px; */
+    }
+    .logChk_txt p {
+        font-size: 17px;
+    }
+    #log_cancle_btn {
+        width: 120px;
+        height: 45px;
+        border: 1px solid;
+        background: #fff;
+        color: #FFE178;
+        font-size: 16px;
+    }
+    #logChk_commit_btn {
+        width: 120px;
+        height: 45px;
+        border: 1px solid;
+/*         background:  #FFE178; */
+        color:#fff;
+        font-size: 16px;
+    }
+    /* cart 팝업 */
+    .cart_popup {
+        width: 380px;
+        height: 240px;
+    }
+    .cart_txt p {
+        font-size: 17px;
+    }
+    #cart_stay_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 14px;
+    }
+    #cart_commit_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 14px;
+    }
+    /* 작성중인 글 팝업 */
+    .wrt_chk_pop {
+        width: 400px;
+        height: 235px;
+    }
+    .wrt_chk_title {
+        padding-top: 40px;
+    }
+    .wrt_chk_title p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    #wrt_cancle_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 15px;
+    }
+    #wrt_keep_going_btn {
+        width: 120px;
+        height: 46px;
+        font-size: 15px;
+    }
+    /* 리뷰 팝업 */
+    .review_popup {
+        width: 425px;
+        padding: 25px;
+    }
+    .rv_popup_txt_title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .review_item_box {
+        margin: 15px 0;
+        padding: 10px 0;
+    }
+    #review_title {
+        width: 285px;
+    }
+    .rv_input_title p {
+        margin: 20px 0;
+    }
+    #review_main {
+        width: 285px;
+        height: 350px;
+    }
+    #review_cancle_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 13px;
+    }
+    #review_commit_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 13px;
+    }
+    /* 문의 팝업 */
+    .qna_popup {
+        width: 425px;
+        padding: 25px;
+    }
+    .qna_popup_txt_title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .qna_item_box {
+        margin: 15px 0;
+        padding: 10px 0;
+    }
+    #qna_popup_title {
+        width: 285px;
+    }
+    .qna_input_title p {
+        margin: 20px 0;
+    }
+    #qna_popup_main {
+        width: 285px;
+        height: 350px;
+    }
+    #qna_cancle_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 13px;
+    }
+    #qna_commit_btn {
+        width: 120px;
+        height: 45px;
+        font-size: 13px;
+    }
+    .scr_chk_box {
+        width: 125px;
+        font-size: 12px;
+        line-height: 20px;
+        gap: 0px;
+    }
+}

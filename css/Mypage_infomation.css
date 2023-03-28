@@ -1,0 +1,80 @@
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+input {
+    outline: none;
+    list-style: none;
+}
+.personal_information{
+    position: relative;
+    width:calc(100% - 200px);
+    height: 300px;
+    margin-top:50px;
+    padding-bottom: 20px;
+    float: right;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'nanum-light';
+}
+.login_text {
+    font-size: 12px;
+    color: grey;
+    margin: 10px 0;
+}
+.id_pw_box{
+width: 400px;
+    max-width: 90vw;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.id,
+.pw {
+    width:calc(100% - 120px);
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    float: right;
+    border: 1px solid;
+}
+label {
+    cursor: pointer;
+}
+.login
+{
+    width:calc(100% - 120px);
+    height: 50px;
+    padding: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    background-color: #FFBF00;
+}
+.font_1{
+    text-align: left;
+    font-weight: 900;
+    font-size: 20px;
+    border-bottom: 1px solid;
+/*     padding-bottom: 20px; */
+    border-color: black;
+}
+.id_text,
+.pw_text{
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+}
+

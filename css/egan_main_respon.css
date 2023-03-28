@@ -1,0 +1,134 @@
+@media screen and (max-width: 1024px){
+    .main {
+        width: 100%;
+    }
+    .vi_text {
+        font-size: 40px;
+        top: 20%;
+    }
+    .vi_link {
+        top: 33%;
+    }
+}
+
+@media screen and (max-width: 820px){
+
+    .vi_text {
+        top: 15%;
+    }
+.vi_link {
+    top: 28%;
+}
+    .chae-sicku_banner{
+        height: 200px;
+    }
+    .chea_text div:nth-child(3) {
+        display: none;
+    }
+    .md_product {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .vi_text {
+        top: 15%;
+    }
+    .vi_link {
+/*         top: 23%; */
+    }
+    .md_product {
+        margin: 35px 0;
+        margin-bottom: 110px;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+    .b_article {
+        width: 0;
+        padding: 0;
+    }
+
+    .best_product{
+        width: 100%;
+    }
+
+    video {
+        height: 420px;
+    }
+
+    .vi_text {
+        top: 23%;
+        font-size: 35px;
+    }
+    .vi_link {
+        top: 34%;
+    }
+
+    .md_product {
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .vi_link {
+        top: 42%;
+    }
+    .chae-sicku_banner{
+        height: 120px;
+    }
+    .chea_text {
+        top:30%; left: 20%;
+    }
+    .chea_text div:nth-child(1) {
+        font-size: 30px;
+    }
+    .chea_text div:nth-child(2) {
+        font-size: 5px;
+    }
+    .mdDes div:nth-child(1) {
+        font-size: 13px;
+    }
+    .md_product {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    video {
+        height: 280px;
+    }
+    .vi_text {
+        font-size: 20px;
+    }
+    .vi_link {
+        top: 26%;
+        width: 40px;
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .md_Pro {
+        height: 400px;
+        display: block;
+    }
+    .md_product {
+        height: 650px;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .md_descri {
+        height: 15%;
+        font-size: 10px;
+        padding: 0 10px;
+
+    }
+
+
+}

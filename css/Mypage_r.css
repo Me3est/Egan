@@ -1,0 +1,321 @@
+@media screen and (max-width: 1024px) {
+
+    .contact_information {
+        width: 350px;
+    }
+    /*  상품문의 */
+    .content_area {
+    width: 100%;
+}
+    .coupon_li_1 {
+        left: 69%;
+    }
+    .coupon_li_2 {
+        left: 84%;
+    }
+    .chk {
+        margin-left: 21px;
+    }
+    /* 장바구니*/
+.letf {
+    left: 250px;
+    top: 106px;
+}
+    #txt_qty {
+    left: 280px;
+    top: 106px;
+    }
+    .right {
+         left: 310px;
+    top: 106px;
+    }
+    .result {
+    left: 50px;
+    top: 170px;
+}
+.product_delect {
+    left: 380px;
+    top: 60px;
+}
+    .payment {
+        margin-left: 400px;
+    }
+    .coupon_li_1 {
+        left: 520px;
+    }
+    .coupon_li_2 {
+        left: 630px;
+        margin-left: 20px;
+    }
+    .contact_information {
+        width: 350px;
+    }
+    .date_created, .answer {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .show_info_box{
+        width: calc((100% - 20px *4) / 2);
+        height: 150px;
+        line-height: 70px;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+    .show_info{
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+      .prvBtn {
+    display: none;
+}
+/* 주문내역 */
+.diriver {
+    left: 80%; 
+}
+/*   상품후기   */
+.period_search {
+width: calc(100% - 200px);
+}.period_search_li {
+  width: calc((100% - 10px) / 4);
+}
+.review_done {
+    width: calc(96%/2);
+}
+.review_can {
+    width: calc(96%/2);
+}
+.review_content {
+    width: calc(100% - 200px);
+}
+.review_product {
+ display:none;
+}
+/*   상품문의   */
+.infomation_li_1 {
+    width: calc(100% - 200px);
+}
+    .review_content_botton {
+        left: 76%;
+    }
+.contact_information {
+   display:none;
+}
+/*    쿠폰  */
+.coupon_li_first { 
+    margin-top: 30px;
+    margin-left: 2%;
+    font-size: 14px; 
+    width: 100px;
+}
+.copun_txt1 {
+    font-size: 14px;
+}
+.copun_txt2 {
+    font-size: 12px;
+}
+    .coupon_li_1 {
+        left: 43%;
+    }
+    .coupon_li_2 {
+        left: 75%;
+    }
+    .copun_txt1 {
+    font-size: 14px;
+    }
+    .copun_txt2 {
+        font-size: 12px;
+    }
+    
+    /*  장바구니 */
+    cription {
+    left: 65px;
+    top: 181px;
+}
+    #txt_qty {
+    left: 95px;
+    top: 210px;
+    }
+    .product_delect {
+    left: 250px;
+    top: 60px;
+}
+    .product_description {
+      left: 65px;
+      top: 175px;
+}
+    .letf {
+    left: 65px;
+    top: 210px;
+    }
+    .right {
+        left: 125px;
+        top: 210px;
+    }
+    .result {
+    left: 65px;
+    top: 260px;
+}
+  .sum {
+    margin-top: 150px;
+}
+   .payment {
+    margin-left: 275px;
+}
+/*  개인정보 수정 */
+.id_pw_box {
+    margin-left: 0px; 
+    width: 100%;
+}
+.id_text, .pw_text {
+    width: 40%; 
+}
+.id, .pw {
+    width: 60%;
+}
+.login {
+    width: 60%;
+}
+}
+@media screen and (max-width: 480px) {
+  .show_info_box{
+        width:80%;    
+        height: 50px;   
+        padding: 0px;
+        margin-bottom: 10px;
+        line-height: 50px;
+      }
+    .show_info{     
+      height: 300px;
+ }
+    .info > ul{
+    width:100%;
+    }
+    
+/*    주문내역  */
+    .name{
+    width:100%;
+    }
+    .infomation {
+    float: left;
+}
+    
+    .diriver {
+    top: 570px;
+    left: 75%;
+}
+    .prvBtn {
+    display: none;
+}
+/*    상품후기  */
+    .review {
+    width: 80%;
+}
+    .review_can {  
+    width: 100%;
+}
+    .review_done {
+    width: 100%;
+    margin-top: 200px;
+}
+.review_product {
+ display:none;
+}
+.review_content_botton {
+    left: 104%;
+    top: 120px;
+}
+.review_content {
+ width:70%;
+}
+    .period_search {
+    display:none;
+}
+/*    상품 문의  */
+.infomation { 
+    width: 100%;
+}
+.answer,date_created {
+    text-align: center;
+}
+.infomation_li_1 {
+    width: 0px;
+}
+.contact_information {
+   display:none;
+}
+/*  쿠폰    */
+.coupon_li_first { 
+    margin-top: 30px;
+    margin-left: 2%;
+    font-size: 14px; 
+    width: 100px;
+}
+    .infomation_li_1 {
+        width: 0px;
+    }
+.copun_txt1 {
+    font-size: 14px;
+}
+.copun_txt2 {
+    font-size: 12px;
+}
+.coupon_li_1 {
+    left: 40%;
+}
+.coupon_li_2 {
+    left: 70%;
+}
+/*  장바구니    */
+.chk_all_box {
+    width: 100%;
+}
+.product_description {
+    left: 80px;
+    top: 190px;
+}
+.letf {
+    left: 200px;
+    top: 190px;
+}
+#txt_qty {
+    left: 230px;
+    top: 190px;
+}
+.right {
+    left: 260px;
+    top: 190px;
+}
+.sum {
+    margin-top: 110px;
+    margin-left: 100px;   
+}
+.result {
+    left: 100px;
+    top: 240px;
+}
+.payment {
+    position: absolute;
+    top: 840px;
+    left: 100px;
+    margin-left: 0px;
+}
+/* 개인정보 수정     */
+.personal_information { 
+    width: 100%;
+}
+    .id_pw_box {
+    margin-left: 0px; 
+            width: 95%;
+}
+ .id_text, .pw_text {
+    width: 30%;
+}
+    .id, .pw {
+    width: 70%;
+}
+   .login {
+    width: 70%;
+} 
+}

@@ -1,0 +1,27 @@
+.btn{
+    border: none;
+    font-size: 13px;
+    font-family: Montserrat, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+}
+.btn_left{
+    border-right: 1px solid gainsboro;
+/*     position: absolute;
+    top: 400px;
+    left: 655px; */
+}
+.btn_right{
+    border-left: 1px solid gainsboro;
+/*     position: absolute;
+    top: 400px;
+    left: 695px; */
+}
+.prvBtn{
+    width: calc(100% - 200px);
+    float: right;
+/*     background: red; */
+    text-align: center;
+    margin-top: 100px;
+}
+.w100{
+        width: 100%;
+}

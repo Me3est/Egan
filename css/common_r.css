@@ -1,0 +1,333 @@
+@media screen and (max-width: 1024px){
+    .content_area{
+        width: 960px;
+        /* background-color: red; */
+    }
+
+    .ham_btn{
+        display: block;
+        width: 80px;
+
+    }
+    .header {
+        /* display: flex; */
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    .nav {
+        display: none;
+    }
+    .menu{
+        width: auto;
+    }
+    .h_menu{
+        display: none;
+    }
+    .h_icon{
+        display: flex;
+        justify-content: right;
+    }
+    .txt_search{
+        font-size: 20px;
+        height: 120%;
+
+    }
+    .icon{
+        width: 35px;
+        height: 120%;
+
+
+        background: url(../포폴/포폴_img/세미_이미지/\(상품나열\)검색창돋보기.png)no-repeat center / 35px;
+    }
+
+    .main_tab{
+        width: 500px;
+        height: 100px;
+        line-height: 100px;
+        /* background-color: red; */
+        margin: 0 auto;
+        font-family: 'nanum';
+    }
+    .main_tab > ul {
+        padding: 0 50px;
+        margin: 10px 0;
+    }
+
+    .main_tab > ul > li {
+        font-size: 16px;
+    }
+    .border_R{
+        height: 15px;
+        margin: 42px 10px;
+
+    }
+
+    .all_manu{
+        width: 100vw;
+        font-size: 22px;
+
+    }
+    .menu_box{
+        margin: 0 auto 50px;
+    }
+    .menu_list{
+        height: 450px;
+    }
+
+    .p_name {
+        font-size: 15px;
+    }
+    .p_sale{
+        font-size: 15px;
+    }
+    .p_price{
+        font-size: 15px;
+    }
+    .basket_btn{
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: red;
+        background: url(../포폴/포폴_img/세미_이미지/shopping-bag.png) no-repeat center / cover;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+    }
+    .f_h{
+        width: 1000px;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    .f_b{
+        width: 1000px;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    .f_h_txt, .f_b_txt {
+
+        font-size: 11.5px;
+
+
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .content_area{
+        width: 700px;
+        /* background-color: red; */
+    }
+    .menu_box{
+        margin: 0 auto 50px;
+
+        border-top: 2px solid;
+        /* width: 100vw; */
+        margin: 0 auto 150px;
+        padding: 50px 0 0;
+
+    }
+    .menu_list{
+        width: calc((100% - (25px * 2))/ 3);
+        height: 420px;
+    }
+    .main_tab{
+        width: 600px;
+        height: 100px;
+        line-height: 100px;
+        /* background-color: red; */
+        margin: 0 auto;
+        font-family: 'nanum';
+    }
+
+    .main_tab > ul {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 0 70px;
+        margin: 35px auto;
+        box-sizing: border-box;
+
+    }
+
+    .main_tab > ul > li {
+        font-size: 19px;
+        font-weight: 600;
+        font-family: 'nanum-light';
+
+        color: #979286;
+
+        /* background-color: red; */
+
+    }
+
+    .main_tab > ul > li:hover {
+
+        color: black;
+
+    }
+
+    .border_R{
+        /* width: 1px; */
+        margin: 40px auto;
+        height: 20px;
+        border-right: 2px solid;
+        color: #979286;
+
+    }
+
+    .all_manu{
+        text-align: center;
+
+        font-size: 24px;
+        font-weight: 600;
+        margin: 10px 0 30px;
+
+        font-family: 'nanum';
+
+    }
+
+    .footer{
+        height: 320px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .footer > .content_area{
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        /* background-color: red; */
+    }
+
+    .f_h_box {
+        padding: 0;
+    }
+
+    .f_b_box{
+        padding:  0;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    .content_area{
+        width: 450px;
+        /* background-color: red; */
+    }
+    .main_banner{
+        display: none;
+
+    }
+    .main_tab{
+        width: 300px;
+
+        /* background-color: red; */
+
+    }
+
+    .main_tab > ul {
+        margin: 50px 0 0;
+        padding: 0 40px;
+        /* background-color: red; */
+
+    }
+
+    .main_tab > ul > li {
+        font-size: 12px;
+    }
+
+
+    .border_R{
+        /* width: 1px; */
+        margin: 44px auto;
+        height: 13px;
+        border-right: 2px solid;
+        color: #979286;
+
+
+    }
+
+    .all_manu{
+        font-size: 20px;
+        /* background-color: red; */
+        margin: 0;
+    }
+
+
+
+    .menu_box{
+        margin: 0 auto 30px;
+        width: 400px;
+        border: none;
+        /* background-color: pink; */
+    }
+    .menu_list{
+        width: 100%;
+        height: 650px;
+    }
+    .menu_item{
+        height: 500px;
+        background-color: red;
+    }
+
+    .basket_btn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: red;
+        background: url(../포폴/포폴_img/세미_이미지/shopping-bag.png) no-repeat center / cover;
+
+    }
+
+    .footer{
+        height: 320px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .footer > .content_area{
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        /* background-color: red; */
+    }
+
+    .f_h_box {
+        padding: 0;
+    }
+
+    .f_b_box{
+        padding:  0;
+    }
+
+
+}
+
+
+
+
+
+
+

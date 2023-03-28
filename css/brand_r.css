@@ -1,0 +1,243 @@
+@media screen and (max-width: 1024px){
+    .story_box1 {
+        max-width: 100%;
+    }
+    .story_logo{
+        max-width:720px;
+    }
+    .logo_box {
+        background: url(../img/logo.png) no-repeat center / 200px;
+    }
+    .brand_color {
+        width: 660px;
+        display: flex;
+        flex-direction: column;
+    }
+    .color_box:first-child{
+        margin-bottom: 30px;
+    }
+
+    .story_info {
+        max-width: 100%;
+    }
+    .info_wrap {
+        max-width: 90vw;
+    }
+    .info_box{
+        height: 400px;
+    }
+    .info_img{
+        max-height: 400px;
+        max-width: 400px;
+    }
+    .info_txt{
+        padding: 70px 30px;
+    }
+    .vegan_txt {
+        max-width: 730px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .story_logo{
+        max-width: 100%;
+    }
+
+    .brand_color {
+        max-width: 100%;
+    }
+    .story_box1 {
+        max-width: 100%;
+    }
+    .story_info {
+        max-width: 100%;
+    }
+    .info_wrap {
+        /*max-width: 650px;*/
+    }
+    .info_box{
+        height: 300px;
+    }
+    .info_img{
+        max-height: 250px;
+        max-width: 250px;
+    }
+    .info_title {
+        font-size: 17px;
+    }
+    .info_txt {
+        height: 300px;
+        width: 60%;
+        padding: 0 5px;
+    }
+    .info_mini_title ~ p {
+        font-size: 14px;
+    }
+    .story_vegan {
+
+        height: 300px;
+        padding: 80px 0 150px 0;
+    }
+    .vegan_txt {
+        max-width: 600px;
+    }
+    .vegan_title1{
+        font-size: 27px;
+    }
+    .vegan_title2_inner {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .banner {
+        transform: translateY(0);
+    }
+    .box {
+        height: 380px;
+    }
+    .txt_box {
+        margin: 100px auto;
+    }
+    .content_title {
+        font-size: 24px;
+    }
+    .content_title ~ p {
+        font-size: 15px;
+    }
+    .main {
+        height: 450px;
+    }
+    .story_logo{
+        max-width: 500px;
+    }
+    .story_logo {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto 80px;
+    }
+    .logo_box {
+        height: 160px;
+    }
+    .logo_txt {
+        max-width: 450px;
+    }
+    .txt_content1 {
+        font-size: 20px;
+    }
+    .brand_color {
+        max-width: 500px;
+    }
+    .info_txt{
+        padding: 0 20px;
+    }
+    .info_mini_title {
+        font-size: 15px;
+    }
+    .info_mini_title ~ p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .banner {
+        transform: translateY(-76px);
+    }
+    .box {
+        height: 400px;
+    }
+    .txt_box {
+        width: 420px;
+        margin: 160px auto;
+    }
+    .content_title {
+        font-size: 21px;
+    }
+    .content_title ~ p {
+        font-size: 13px;
+    }
+    .title{
+        font-size: 21px;
+    }
+    .main {
+        height: 380px;
+    }
+    .story_logo {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto 80px;
+        max-width: 400px;
+    }
+    .story_info{
+        padding: 50px 0 70px;
+    }
+    .logo_txt {
+        width: 390px;
+    }
+    .info_txt_box {
+        margin: 0 auto 80px;
+    }
+    .info_txt_box > p {
+        font-size: 14px;
+    }.txt_content1 {
+         font-size: 18px;
+     }
+    .txt_content2 {
+        font-size: 13px;
+    }
+
+    .border {
+        width: 350px;
+    }
+    .brand_color {
+        max-width: 400px;
+    }
+    .color_box {
+        height: 170px;
+    }
+    .info_box{
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 0;
+        height: 250px;
+    }
+    .info_mini_title {
+        font-size: 15px;
+    }
+
+    .info_img1, .info_img2, .info_img3 {
+        background: none;
+        width: 0;
+        height: 0;
+    }
+    .info_txt{
+        width: 90%;
+        display: flex;
+        height: 190px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* padding: 0 0 0 15px; */
+    }
+    .story_vegan {
+        height: 250px;
+    }
+    .vegan_txt {
+        max-width: 420px;
+    }
+    .vegan_title1 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .vegan_title2 {
+        font-size: 26px;
+    }
+    .vegan_title2_inner {
+        font-size: 14px;
+        line-height: 5px;
+
+    }
+}
