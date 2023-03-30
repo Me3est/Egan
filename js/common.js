@@ -1,12 +1,12 @@
 // 섹션 만들기
-function make_sec(sec_id) {
-    let list = `<div class="sec" id="${sec_id}">
-                    <div class="sec_title">${sec_id.toUpperCase()}</div>
-                    <div class="sec_body"></div>
-                </div>`;
+// function make_sec(sec_id) {
+//     let list = `<div class="sec" id="${sec_id}">
+//                     <div class="sec_title">${sec_id.toUpperCase()}</div>
+//                     <div class="sec_body"></div>
+//                 </div>`;
 
-    $('.content_area').append(list)
-}
+//     $('.content_area').append(list)
+// }
 function load_list(cate_idx, start_idx, show_qty) {
     let rs = ITEM_LIST[cate_idx];
 
@@ -15,43 +15,21 @@ function load_list(cate_idx, start_idx, show_qty) {
         tmp_qty = rs.length
     }
     for(let i=start_idx; i<tmp_qty; i++) {
-        let list = `<div class="item_box">
-                        <div class="item_img">
-                            <a href="deal.html?cate=${cate_idx}&item=${rs[i].item_no}">
-                                <img src="${rs[i].src}" alt="">
-                                <img src="${rs[i].coverd_src}" alt="">
-                            </a>
+        let list = `<div class="menu_list">
+                        <div class="menu_item">
+                        <a href="real_detail.html?cate=0&item=1">
+                            <img src="./img/food/1-1.jpg" alt="c">
+                        </a>
+                        <button class="menu_basket_btn"></button>
                         </div>
-                        <div class="item_info">
-                            <div class="item_opt"> 
-                            </div>
-                            <div class="item_title">${rs[i].title}</div>
-                            <div class="item_desc">${rs[i].desc}</div>
-                            <div class="line"></div>
-                            <div class="item_s_price">${Number(rs[i].s_price).toLocaleString('ko-KR')}</div>
-                            <span class="item_o_price"><del>${Number(rs[i].o_price).toLocaleString('ko-KR')}</del></span>
+                        <div class="menu_txt">
+                        <p class="p_name">스킨케어</p>
+                        <p class="p_sale">32%</p>
+                        <p class="p_price">스킨케어</p>
                         </div>
                     </div>`
 
-                   
-            $(`#${cate_arr[cate_idx]} > .sec_body`).append(list);
-            // main_opt(cate_idx);
-           
-            
-
-    }
-    
-    for(let j=0; j<rs.length; j++) {
-        let rs2 = ITEM_LIST[cate_idx][j]
-        var op_color = rs2.opt_color.split(",");
-
-        console.log("op_color: " + op_color);
-
-        for(let h=0; h<3; h++) {
-            let list2 = `<div class="opt_color" style="background-color:${op_color[h]}"></div>`
-            // $('.item_opt').eq(j).append(list2);
-            $(`#${cate_arr[cate_idx]}  .item_opt`).eq(j).append(list2);
-        }
+            $(`#${cate_arr[cate_idx]} > .menu_box`).append(list);
     }
 }
 function get_url_info(key) {

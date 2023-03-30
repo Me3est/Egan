@@ -1,13 +1,9 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-
 }
-
 body{
     margin: 0;
-
-
     /* background-color: #FFFEEB; */
     background-color: white;
 }
@@ -20,21 +16,13 @@ ul{list-style: none; margin: 0; padding: 0;}
     height: 100%;
 
     margin: 0 auto;
-
-
     display: flex;
     justify-content: space-between;
-
-
-
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
-
 /* //////////////////// 반응형 ////////////////////// */
 .ham_btn{
     display: none;
@@ -44,15 +32,11 @@ a{
 
     padding: 15px 0;
     box-sizing: border-box;
-
     /* background-color: red; */
-
 }
-
 .ham_line{
     width: 20px;
     height: 2px;
-
     background-color: #000;
     /* box-sizing: border-box; */
 }
@@ -62,9 +46,6 @@ a{
 .ham_line:nth-child(3) {
     /* height: 2.5px; */
 }
-
-
-
 /* //////////////     헤더    //////////////// */
 .header{
     height: 70px;
@@ -73,8 +54,6 @@ a{
 
     padding: 0 20px;
     box-sizing: border-box;
-
-
     /* background: #fff; */
     background: #FFFEEB;
     display: flex;
@@ -83,28 +62,19 @@ a{
     top: 0;
     right: 0;
     z-index: 99;
-
 }
-
 .logo{
     font-size: 35px;
     font-family: 'time';
     /* color: #facf0e; */
     color:#ffbf00;
-
-
-
-
     /* flex-direction: row; */
-
     height: 100%;
     width: 200px;
-
 }
 .logo > a {
     color:#ffbf00;
 }
-
 .nav{
 
     /* display: block; */
@@ -115,34 +85,25 @@ a{
     margin: 0 30px;
 }
 .menu{
-
     height: 100%;
     width: 200px;
-
     display: flex;
     justify-content: space-between;
-
 }
-
 .h_menu > a{
-
     font-size: 13px;
     margin-left: 15px;
 }
 .h_menu::after{
     content: "";
-
     margin: 15px;
     width: 1px;
     border-right: 1px solid #979286;
-
-
 }
 .h_icon{
     /* width: 55px; */
     height: 100%;
     display: flex;
-
 }
 .shopping{
     width: 25px;
@@ -155,52 +116,37 @@ a{
     width: 25px;
     margin-left: 5px;
     background: url(../img/h_검색.png)no-repeat center / 20px;
-
     /* background-color: red; */
     cursor: pointer;
 }
-
-
 /* //////////////     검색창    //////////////// */
-
-
 .main_banner{
     position: relative;
     /* background-color: red; */
-
     height: 38.5vw;
     max-height: 500px;
-
 }
-
 .banner {
     width: 100%;
     height: 100%;
-
     background:rgba(0, 0, 0, 0.1)  url(../img/detail_main.jpg)no-repeat center / cover;
     background-blend-mode: darken;
 }
 .search_box{
-
     width:  50%;
     height: 50px;
-
-
     margin:0 auto;
     border-bottom: 1px solid white;
-
     box-sizing: border-box;
     /* background-color: red; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 .txt_search{
     background: transparent;
     width: calc(100% - 35px);
-
     height: 50px;
     box-sizing: border-box;
     border: none;
@@ -211,24 +157,16 @@ a{
     font-size: 25px;
     font-family: 'nanum';
     /* background-color: pink; */
-
-
 }
 input::placeholder {
     color: white;
 }
 .icon{
-
     width: 35px;
     height: 100%;
     float: right;
-
     background: url(../img/detail_search.png)no-repeat center / 50px;
-
-
 }
-
-
 /* //////////////     메인메뉴_탭    //////////////// */
 .main_tab{
     width: 600px;
@@ -238,7 +176,6 @@ input::placeholder {
     margin: 80px auto;
     font-family: 'nanum';
 }
-
 .main_tab > ul {
     display: flex;
     align-content: center;
@@ -248,38 +185,27 @@ input::placeholder {
     box-sizing: border-box;
     /* background-color: tan; */
 }
-
 .main_tab > ul > li {
     font-size: 19px;
     font-weight: 600;
     font-family: 'nanum-light';
-
     color: #979286;
     cursor: pointer;
     /* background-color: red; */
-
 }
-
 .main_tab > ul > li:hover {
-
     color: black;
-
 }
-
 .border_R{
     height: 20px;
     border-right: 2px solid;
     color: #979286;
-
 }
-
 .all_manu{
     text-align: center;
-
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
-
     font-family: 'nanum';
     border-bottom: 2px solid;
     width: 1200px;
@@ -287,32 +213,23 @@ input::placeholder {
     margin: 0 auto;
     padding-bottom: 20px;
 }
-
-
 /* //////////////     메인메뉴   /////////////// */
 .menu_box{
-
     display: flex;
     flex-wrap: wrap;
-
     margin: 0 auto 50px;
-
-
     margin: 0 auto 150px;
     padding: 50px 0 0;
     max-width: 90vw;
-justify-content: flex-start;
+    justify-content: flex-start;
 }
-
 .menu_list{
     width: calc((100% - (25px * 3))/ 4);
     /*height: 500px;*/
-
     margin-bottom: 100px;
-
     box-sizing: border-box;
     overflow: hidden;
-margin-left: 15px;
+    margin-left: 15px;
      /*background-color: red;*/
 }
 .box {
@@ -323,63 +240,42 @@ margin-left: 15px;
 .menu_list2{
     width: calc((100% - (25px * 3))/ 4);
     /*height: 500px;*/
-
     margin-bottom: 100px;
-
     box-sizing: border-box;
     overflow: hidden;
-
     /*background-color: red;*/
 }
 .menu_item{
     /* height: 400px; */
     width: 100%;
-
-
      /*background-color: blue; */
     transform: scale(1);
     overflow: hidden;
-
-
 }
-.menu_item  img {
+.menu_item img {
     width: 100%;
     height: 100%;
-
     max-width: 100%;
     height: auto !important;
-
     transition: all 0.3s;
     display: block;
     background: pink;
-
 }
 .menu_item:hover  img{
     transform: scale(1.2);
 }
-
 .menu_txt{
-
     /* height: 100px; */
-
     margin-top: 15px;
-
     font-family: 'nanum';
-
     /* background-color: pink; */
-
-
 }
 .p_name {
-
     font-size: 17px;
     font-family: 'nanum-light';
     font-weight: 400;
     margin: 0;
-
     width: 100%;
-
-
 }
 .p_sale{
     font-weight: 900;
@@ -388,14 +284,11 @@ margin-left: 15px;
     margin: 8px 0 0;
     display: inline-block;
 }
-
 .p_price{
     font-weight: 900;
     font-size: 17px;
     margin: 0;
     display: inline-block;
-
-
 }
 .menu_basket_btn{
     width: 40px;
@@ -405,52 +298,38 @@ margin-left: 15px;
     right: 15px;
     /* background-color: red; */
     background: url(../img/detail_basket.png) no-repeat center / cover;
-
-
 }
-
-
-
-
 /* ////////////// 탑 버튼 ////////////// */
 .top_btn{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-
     position: fixed;
     bottom: 50px;
     right: 50px;
-
     text-align: center;
     line-height: 70px;
-
     color: white;
     font-size: 20px;
     font-weight: 400;
-
     transition-property: background-color, opacity, visibility;
     transition-duration: 0.3s, 0.5s, 0.5s;
     opacity: 0;
     visibility: hidden;
     z-index: 999;
-
     background-color: #facf0e;
     background-color: #ffbf00;
     background-color: #FFE178;
 }
-
 .top_show{
     opacity:1;
     visibility:visible;
-
 }
 /* ////////////// 수량 팝업 ////////////// */
 .popup_outer_box{
     width: 450px;
     height: 330px;
     background-color: white;
-
     border-radius: 4%;
 /*     border: 1px solid #979286; */
     position: fixed;
@@ -458,46 +337,32 @@ margin-left: 15px;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-
     padding: 30px;
-
     box-sizing: border-box;
-
     display: none;
     z-index: 9999;
 }
 .popup_inner_box{
     width: 100%;
     height: 50%;
-
-
     font-family: 'nanum-light';
     /* background-color: red; */
-
 }
 .inner_txt{
     width: 100%;
     height: 35px;
     font-size: 14px;
-
     box-sizing: border-box;
     padding-top: 1px;
 }
-
-
 .inner_price{
     font-family: 'nanum';
     font-weight: 600;
-
-
     width: 100%;
     height: 50%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 .popup_inner_price1 > p{
     margin-top: 15px;
@@ -508,19 +373,14 @@ margin-left: 15px;
     height: 35px;
     line-height: 35px;
     background-color: white;
-
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-
-
     border: 0.3px solid rgb(178, 177, 177);
-
     border-radius: 3px;
     padding: 0 15px;
     box-sizing: border-box;
 }
-
 #pm_txt{
     border: none;
     outline: none;
@@ -532,19 +392,15 @@ button{
     border: 0;
     outline: 0;
     cursor: pointer;
-
     box-sizing: border-box;
-
 }
 #minus{
     background: url(../img/Btn_minus.png) no-repeat center / 13px;
-
 }
 #plus{
     background: url(../img/Btn_plus.png) no-repeat center / 10px;
 }
 .total_box{
-
     height: 30px;
     line-height: 30px;
     display: flex;
@@ -553,41 +409,31 @@ button{
 }
 .total_name{
     font-weight: 600;
-
-
 }
 .total_price{
     font-size: 20px;
     font-weight: 900;
-
     font-family: 'nanum';
 }
-
 .point_box{
     height: 20px;
-
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     padding-top: 2px;
 }
 .point{
     width: 38px;
     height: 20px;
     line-height: 21px;
-
     background-color: #ffbf00;
     background-color: #FFE178;
     border-radius: 8px;
     text-align: center;
-
     color: #fff;
     font-weight: 900;
     font-size: 11px;
     margin-right: 6px;
-
 }
 .total_sale{
     font-size: 13px;
@@ -598,17 +444,13 @@ button{
     height: 85px;
     line-height: 85px;
     /* background-color: teal; */
-
     align-items: flex-end;
     display: flex;
     justify-content: space-between;
-
-
 }
 .cp_btn > button{
     width: 190px;
     height: 70%;
-
     font-family:'nanum-light';
     font-weight: 900;
     font-size: 15px;
@@ -621,20 +463,16 @@ button{
     color: #FFE178;
     color: #ffbf00;;
     background-color: #fff;
-
 }
 #put{
-
     background-color:#FFE178;
     background-color:#ffbf00;
     /* background-color:#ffbf00; */
     color: #fff;
-
 }
-
 /* ////////////// 수량 팝업 ////////////// */
 .basket_popup{
-       width: 450px;
+    width: 450px;
     height: 200px;
     background-color: white;
     /* border: 1px solid #979286; */

@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="logo">
-      <a href="main.html">Egan</a>
+      <a href="index.html">Egan</a>
     </div>
     <div class="nav">
       <a href="detail.html">SHOP</a>
@@ -105,10 +105,10 @@
 </div>
 <div class="all_manu">모든상품</div>
 <div class="menu_box content_area">
-     <div class="menu_list">
+     <!-- <div class="menu_list">
        <div class="menu_item">
-          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-            <img src="${dto.saveImage}" alt="c">
+          <a href="real_detail.html?cate=0&item=1">
+            <img src="./img/food/1-1.jpg" alt="c">
           </a>
           <button class="menu_basket_btn"></button>
         </div>
@@ -117,76 +117,9 @@
           <p class="p_sale">32%</p>
           <p class="p_price">스킨케어</p>
         </div>
-      </div>
-
-
-      <div class="menu_list">
-        <div class="menu_item">
-          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-            <img src="${dto.saveImage}" alt="c">
-          </a>
-          <button class="menu_basket_btn"></button>
-        </div>
-        <div class="menu_txt">
-          <p class="p_name">스킨케어</p>
-          <p class="p_sale">스킨케어</p>
-          <p class="p_price">스킨케어</p>
-        </div>
-      </div>
-      <div class="menu_list">
-        <div class="menu_item">
-          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-            <img src="${dto.saveImage}" alt="c">
-          </a>
-          <button class="menu_basket_btn"></button>
-        </div>
-        <div class="menu_txt">
-          <p class="p_name">스킨케어</p>
-          <p class="p_sale">32%</p>
-          <p class="p_price">스킨케어</p>
-        </div>
-      </div>
-
-
-      <div class="menu_list">
-        <div class="menu_item">
-          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-            <img src="${dto.saveImage}" alt="c">
-          </a>
-          <button class="menu_basket_btn"></button>
-        </div>
-        <div class="menu_txt">
-          <p class="p_name">스킨케어</p>
-          <p class="p_sale">32%</p>
-          <p class="p_price">스킨케어</p>
-        </div>
-      </div>
-
-
-  <c:if test="${keyword != null}">
-    <c:forEach var="dto" items="${cate_list }">
-      <div class="menu_list">
-        <div class="menu_item">
-          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-            <img src="${dto.saveImage}" alt="c">
-          </a>
-          <button class="menu_basket_btn"></button>
-        </div>
-        <div class="menu_txt">
-          <p class="p_name">스킨케어</p>
-          <p class="p_sale">32%</p>
-          <p class="p_price">스킨케어</p>
-        </div>
-      </div>
-    </c:forEach>
-  </c:if>
-
-
+      </div> -->
+      
 </div>
-
-
-
-
 <div class="popup_outer_box">
   <div class="popup_inner_box">
     <div class="inner_txt">
@@ -216,7 +149,6 @@
     </div>
   </div>
 </div>
-
 <div class="basket_popup">
   <div class="basket_txt">
     <p>제품이 장바구니에 담겼습니다.</p>
@@ -238,18 +170,10 @@
     <input type="button" value="취소" id="log_cancle_btn">
     <input type="button" value="확인하기" id="logChk_commit_btn" name="logChk">
   </div>
-
 </div>
 <button class="top_btn">TOP</button>
-
-
-
-
 <div class="footer">
   <div class="content_area">
-
-
-
     <div class="f_txt1">
       <div class="f_h_box">
         <p class="f_h_txt f_h_txt1">1:1상담하기<span> | Q & A 바로가기</span></p>
@@ -326,17 +250,17 @@
 
 
   $(document).ready(function (){
-      $(document).on('click', '.menu_basket_btn', function () {
-        <c:if test="${m_id != null}">
-        $('.popup_outer_box').css({display:'block'})
-        $('.layer').css({display:'block'})
-        </c:if>
+      // $(document).on('click', '.menu_basket_btn', function () {
+      //   <c:if test="${m_id != null}">
+      //   $('.popup_outer_box').css({display:'block'})
+      //   $('.layer').css({display:'block'})
+      //   </c:if>
 
-        <c:if test="${m_id == null}">
-        $('.logChk_popup').css({display:'block'})
-        $('.layer').css({display:'block'})
-        </c:if>
-      })
+      //   <c:if test="${m_id == null}">
+      //   $('.logChk_popup').css({display:'block'})
+      //   $('.layer').css({display:'block'})
+      //   </c:if>
+      // })
 
   })
 </script>
