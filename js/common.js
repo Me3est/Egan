@@ -17,19 +17,18 @@ function load_list(cate_idx, start_idx, show_qty) {
     for(let i=start_idx; i<tmp_qty; i++) {
         let list = `<div class="menu_list">
                         <div class="menu_item">
-                        <a href="real_detail.html?cate=0&item=1">
-                            <img src="./img/food/1-1.jpg" alt="c">
+                        <a href="real_detail.html?cate=${cate_idx}&item=${rs[i].item_no}">
+                            <img src="${rs[i].src}" alt="c">
                         </a>
                         <button class="menu_basket_btn"></button>
                         </div>
                         <div class="menu_txt">
-                        <p class="p_name">스킨케어</p>
+                        <p class="p_name">${rs[i].title}</p>
                         <p class="p_sale">32%</p>
-                        <p class="p_price">스킨케어</p>
+                        <p class="p_price">${rs[i].s_price}</p>
                         </div>
                     </div>`
-
-            $(`#${cate_arr[cate_idx]} > .menu_box`).append(list);
+            $(`.menu_box`).append(list);
     }
 }
 function get_url_info(key) {
@@ -53,4 +52,4 @@ function get_url_info(key) {
 
     
    
-const cate_arr = ['best', 'top', 'bot', 'new'];
+const cate_arr = ['daily', 'skin', 'food', '채식구'];

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="./js/ITEM_LIST.js"></script>
+    <script defer src="./js/common.js"></script>
     <script defer src="../js/h_f.js"></script>
     <script defer src="../js/header_search.js"></script>
     <script defer src="../js/topBtn.js"></script>
@@ -41,7 +43,7 @@
               <li><a href="login.html">Login</a></li>
               <li><a href="real_register.html">Register</a></li>
             <li class="hr"></li>
-            <li><a href="detail.html">SHOP</a></li>
+            <li><a href="detail.html?cate=0">SHOP</a></li>
             <li><a href="brand.html">BRAND</a></li>
             <li><a href="brand.html">COMMUNITY</a></li>
           </ul>
@@ -51,7 +53,7 @@
         <a href="index.html">Egan</a>
       </div>
       <div class="nav">
-        <a href="detail.html">SHOP</a>
+        <a href="detail.html?cate=0">SHOP</a>
         <a href="brand.html">BRAND</a>
         <a href="brand.html">COMMUNITY</a>
       </div>
@@ -72,14 +74,14 @@
     <div class="container">
         <div class="detail_box">
             <div class="detail_img">
-                <img src="${dto.saveImage}" alt="">
+                <img src="" alt="">
             </div>
             <div class="detail_imfo">
                 <div class="d_txt">
-                    <div class="dt_title">${dto.p_name}</div>
+                    <div class="dt_title"></div>
                     <div class="price_txt_box">
-                        <div class="o_price o_p_c"><del>${dto.p_price}</del></div>
-                        <div class="s_price s_p_c">10,000원</div>
+                        <div class="o_price o_p_c"><del></del></div>
+                        <div class="s_price s_p_c"></div>
                     </div>
                     <p class="dt_title_txt">Lorem ipsum dolor sit amet consectetur</p>
                     <p class="dt_title_txt">Lorem ipsum dolor sit amet consectetur</p>
@@ -87,11 +89,11 @@
                 <table class="detail_tb">
                     <tr>
                         <td class="det_txt">소비자가</td>
-                        <td id="o_price"><del>${dto.p_price}</del></td>
+                        <td class="o_price"><del></del></td>
                     </tr>
                     <tr>
                         <td class="det_txt">판매가</td>
-                        <td id="s_price">10,000원</td>
+                        <td class="s_price"></td>
                     </tr>
                     <tr>
                         <td class="det_txt">배송</td>
@@ -116,7 +118,7 @@
                     <input type="button" value="장바구니" id="btn_cart">
                     <input type="button" value="결제하기" id="btn_pay">
                 </div>
-                <div class="total_price">최종금액 : 0원</div>
+                <div class="total_price"></div>
             </div>
         </div>
         <!-- 메인 탭 -->
@@ -129,10 +131,10 @@
             </div>
             <div class="detail_item_box">
                 <div class="tb_dt" id="item_ex">
-                    <img src="${dto.detail_image1}" alt="${dto.p_name}">
+                    <img src="" alt="">
                 </div>
                 <div class="tb_dt" id="item_ex_dt">
-                    <img src="${dto.detail_image2}" alt="${dto.p_name}">
+                    <img src="" alt="">
                 </div>
                 <!-- 리뷰 -->
                 <div class="tb_dt" id="item_review">
@@ -154,16 +156,16 @@
                             </thead>
                             <tbody>
                             <tr class="review_tr move_tr">
-                                <td class="rv_tb_css rv_tb_num">${dto.num}</td>
-                                <td class="rv_tb_css rv_tb_title">${dto.title}</td>
-                                <td class="rv_tb_css rv_tb_writer">${dto.m_name}</td>
-                                <td class="rv_tb_css rv_tb_date">${dto.in_day}</td>
+                                <td class="rv_tb_css rv_tb_num">1</td>
+                                <td class="rv_tb_css rv_tb_title">aaaaa</td>
+                                <td class="rv_tb_css rv_tb_writer">abxc</td>
+                                <td class="rv_tb_css rv_tb_date">2022</td>
                             </tr>
                             <tr class="review_tr move_tr tab_content">
                                 <td>
                                     <div class="rev_box">
                                         <div class="rv_content">
-                                                ${dto.content}
+                                                asdardcxgrfgdfdawerasdasdaweasg
                                         </div>
                                     </div>
                                 </td>
@@ -281,7 +283,7 @@
             <div class="rv_popup_txt_title">PRODUCT REVIEW</div>
             <div class="review_item_box">
                 <div class="item_img">
-                    <img src="${dto.saveImage}" alt="">
+                    <!-- <img src="${dto.saveImage}" alt=""> -->
                 </div>
                 <div class="item_title">${dto.p_name}</div>
             </div>
@@ -308,7 +310,7 @@
         <div class="qna_popup_txt">
             <div class="qna_popup_txt_title">PRODUCT Q&A</div>
             <div class="qna_item_box">
-                <div class="item_img"><img src="${dto.saveImage}" alt=""></div>
+                <!-- <div class="item_img"><img src="${dto.saveImage}" alt=""></div> -->
                 <div class="item_title">${dto.p_name}</div>
             </div>
         </div>

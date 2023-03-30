@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="./js/ITEM_LIST.js"></script>
+  <script defer src="./js/common.js"></script>
   <script defer src="./js/detail.js"></script>
   <script defer src="./js/h_f.js"></script>
   <script defer src="./js/topBtn.js"></script>
@@ -58,7 +60,7 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="real_register.html">Register</a></li>
           <li class="hr"></li>
-          <li><a href="detail.html">SHOP</a></li>
+          <li><a href="detail.html?cate=0">SHOP</a></li>
           <li><a href="brand.html">BRAND</a></li>
           <li><a href="brand.html">COMMUNITY</a></li>
         </ul>
@@ -68,7 +70,7 @@
       <a href="index.html">Egan</a>
     </div>
     <div class="nav">
-      <a href="detail.html">SHOP</a>
+      <a href="detail.html?cate=0">SHOP</a>
       <a href="brand.html">BRAND</a>
       <a href="brand.html">COMMUNITY</a>
     </div>
@@ -94,13 +96,13 @@
 </div>
 <div class="main_tab">
   <ul>
-    <li id="move_skin" onclick="cate_click(2)">스킨케어</li>
+    <li id="move_skin"><a href="detail.html?cate=0">스킨케어</a></li>
     <div class="border_R"></div>
-    <li id="move_daily" onclick="cate_click(1)">생활용품</li>
+    <li id="move_daily""><a href="detail.html?cate=1">생활용품</a></li>
     <div class="border_R"></div>
-    <li id="move_food" onclick="cate_click(3)">식품</li>
+    <li id="move_food""><a href="detail.html?cate=2">식품</a></li>
     <div class="border_R"></div>
-    <li id="move_veg">채식:구</li>
+    <li id="move_veg"><a href="detail.html?cate=3">채식:구</a></li>
   </ul>
 </div>
 <div class="all_manu">모든상품</div>
@@ -118,7 +120,6 @@
           <p class="p_price">스킨케어</p>
         </div>
       </div> -->
-      
 </div>
 <div class="popup_outer_box">
   <div class="popup_inner_box">
@@ -213,56 +214,59 @@
 
 
 <div class="layer"></div>
-
 </div>
 
 </div>
 
 <script>
-  function search(){
-
-    let keyword = document.getElementById('txt_search2').value;
-
-    if(keyword == ""){
-      location.href = "http://localhost:8080/egan/detail";
-    }else {
-      location.href = "http://localhost:8080/egan/search_product/" + keyword + "";
-    }
-
-  }
-
-
-  function cate_click(data){
-    console.log(data);
-    let cate_value = "";
-    if(data == 2){
-      cate_value = "skin"
-      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
-    }else if(data == 1){
-      cate_value = "daily"
-      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
-    }else{
-      cate_value = "food"
-      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
-    }
-
-  }
-
-
-  $(document).ready(function (){
-      // $(document).on('click', '.menu_basket_btn', function () {
-      //   <c:if test="${m_id != null}">
-      //   $('.popup_outer_box').css({display:'block'})
-      //   $('.layer').css({display:'block'})
-      //   </c:if>
-
-      //   <c:if test="${m_id == null}">
-      //   $('.logChk_popup').css({display:'block'})
-      //   $('.layer').css({display:'block'})
-      //   </c:if>
-      // })
-
+  $(window).ready(function() {
+    let cate_no = get_url_info("cate")
+    load_list(cate_no, 8, 16)
   })
+  // function search(){
+
+  //   let keyword = document.getElementById('txt_search2').value;
+
+  //   if(keyword == ""){
+  //     location.href = "http://localhost:8080/egan/detail";
+  //   }else {
+  //     location.href = "http://localhost:8080/egan/search_product/" + keyword + "";
+  //   }
+
+  // }
+
+
+  // function cate_click(data){
+  //   console.log(data);
+  //   let cate_value = "";
+  //   if(data == 2){
+  //     cate_value = "skin"
+  //     location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+  //   }else if(data == 1){
+  //     cate_value = "daily"
+  //     location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+  //   }else{
+  //     cate_value = "food"
+  //     location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+  //   }
+
+  // }
+
+
+  // $(document).ready(function (){
+  //     // $(document).on('click', '.menu_basket_btn', function () {
+  //     //   <c:if test="${m_id != null}">
+  //     //   $('.popup_outer_box').css({display:'block'})
+  //     //   $('.layer').css({display:'block'})
+  //     //   </c:if>
+
+  //     //   <c:if test="${m_id == null}">
+  //     //   $('.logChk_popup').css({display:'block'})
+  //     //   $('.layer').css({display:'block'})
+  //     //   </c:if>
+  //     // })
+
+  // })
 </script>
 
 </body>

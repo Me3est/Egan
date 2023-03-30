@@ -1,24 +1,11 @@
+
 $(document).ready(function() {
-
-    // 장바구니 버튼
-
-    // 구매버튼
-    // $(document).on('click', '#btn_pay', function() {
-    //     location.href="http://localhost:8080/egan/myPage"
-    // })
-
-    // 리뷰 버튼
-    // $(document).on('click', '#rev_btn', function() {
-    //     $('.review_popup').css({display:'block'})
-    //     $('.layer').css({display:'block'})
-    // })
-
-    // 문의 버튼
-    // $(document).on('click', '#qna_btn', function() {
-    //     $('.qna_popup').css({display:'block'})
-    //     $('.layer').css({display:'block'})
-    // })
-
+    let cate_no = get_url_info("cate");
+    let item_no = get_url_info("item");
+    console.log(rs)
+    load_data(cate_no, item_no);
+    // 데이터 집어넣기
+   
     // 작성중인 글 버튼
     $(document).on('click', '#wrt_cancle_btn', function() {
         alert("11")
@@ -79,8 +66,8 @@ $(document).ready(function() {
         let item_count = $('#txt_qty').val();
         if(item_count > 1) {
             $('#txt_qty').val(+item_count - 1) ;
-            aa((+item_count-1) * 10000)
-
+            total_price = (rs.s_price * +$('#txt_qty').val())
+            $('.total_price').text(total_price.toLocaleString('ko')+"원")
         }
         else  {
             alert('최소 주문 수량은 1개 입니다.')
@@ -90,27 +77,19 @@ $(document).ready(function() {
         let item_count = $('#txt_qty').val();
         $('#txt_qty').val(+item_count + 1) ;
         console.log(item_count)
-        aa((+item_count+1) * 10000)
+        total_price = (rs.s_price * +$('#txt_qty').val())
+        $('.total_price').text(total_price.toLocaleString('ko')+"원")
     })
 
     // 탭 버튼 스크롤 
     let tab_loc = $('.item_ex_main').offset().top;
     let h_hei = $('.header').height();
-
-    // if(h_hei <= $(window).scrollTop()) {
-    //     $('.item_ex_tab').css({
-    //         position: 'fixed',
-    //         // top:'70px'
-    //         top: $('.header').height()
-    // })
-    // }
     let s_top = 0;
     $(window).resize(function (){
             $('.item_ex_tab').css({
                 position: 'fixed',
                 top: $('.header').height()
             })
-
     });
     $(window).scroll(function() {
         // 탭 스크롤 이밴트
@@ -141,9 +120,7 @@ $(document).ready(function() {
             $('.detail_item_box').css({
                 paddingTop:'0px'
             })
-
         }
-
         if($(window).innerWidth() <= 1024) {
             s_top = $(window).scrollTop();
             if(s_top+h_hei > tab_loc) {
@@ -155,7 +132,6 @@ $(document).ready(function() {
                     // paddingTop:'60px'
                 })
             }
-
         }
         if($(window).innerWidth() <= 480) {
             s_top = $(window).scrollTop();
@@ -168,11 +144,8 @@ $(document).ready(function() {
                     // paddingTop:'60px'
                 })
             }
-
         }
     })
-
-
     // if (matchMedia("screen and (max-width: 1024px)").matches)  {
     //     $(window).scroll(function() {
     //         let s_top = $(window).scrollTop();
@@ -187,7 +160,6 @@ $(document).ready(function() {
     //          }
     //     })
     // }
-
     // 탭 스크롤 부드럽게 이동
     let tab_hei = $('.item_ex_tab').innerHeight();
     $('.item_ex_tab a').click(function() {
@@ -199,7 +171,6 @@ $(document).ready(function() {
             scrollTop : pos - (tab_hei  + 70)
         }, 1000)
     })
-
     //탭 클릭 이벤트
     // $('.tab').click(function() {
     //     $('.tab').removeClass('tab_active');
@@ -214,12 +185,18 @@ $(document).ready(function() {
         // beforeWidth = nowWidth;
     });
 })
-
-// 최종금액 입력
-let item_price = 0;
-function aa(item_price) {
-    $('.total_price').text(`최종금액 : ${item_price.toLocaleString('kr')}원`);
-}
-
 // 새로고침
 //    history.scrollRestoration = "manual"
+
+let rs = "";
+function load_data(cate, item) {
+    rs = ITEM_LIST[cate][item-1];
+    console.log(rs);
+    $('.detail_img > img').attr('src', rs.src);
+    $('.dt_title').text(rs.title);
+    $('.o_price').text(Number(rs.o_price).toLocaleString('ko')+"원");
+    $('.s_price').text(Number(rs.s_price).toLocaleString('ko')+"원");
+    $('.total_price').text(Number(rs.s_price).toLocaleString('ko')+"원");
+    $('#item_ex > img').attr('src', rs.src);
+    $('#item_ex_dt > img').attr('src', rs.src);
+}
