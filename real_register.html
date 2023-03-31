@@ -7,14 +7,14 @@
     <title>Egan_회원가입</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/header_search.js"></script>
-    <script defer src="../js/register.js"></script>
-    <link rel="stylesheet" href="../css/egan_header.css ">
-    <link rel="stylesheet" href="../css/h_f_r.css ">
-    <link rel="stylesheet" href="../css/header_search.css ">
-    <link rel="stylesheet" href="../css/calendar.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <script defer src="./js/h_f.js"></script>
+    <script defer src="./js/header_search.js"></script>
+    <script defer src="./js/register.js"></script>
+    <link rel="stylesheet" href="./css/egan_header.css ">
+    <link rel="stylesheet" href="./css/h_f_r.css ">
+    <link rel="stylesheet" href="./css/header_search.css ">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/register.css">
 </head>
 <body>
 <div class="model_background">
@@ -129,7 +129,7 @@
                             <td class="reg_input">
                                 <input type="text" id="address" placeholder="주소">
                                 <input type="text" id="postcode" placeholder="우편번호">
-                                <input type="button" id="address_btn" onclick="sample5_execDaumPostcode()" value="주소 검색" ><br>
+                                <input type="button" id="address_btn" value="주소 검색" ><br>
                             </td>
                         </tr>
                         <tr>
@@ -361,23 +361,7 @@
 </script>
 <!-- 탑 버튼 -->
 <div class="top_btn"><a href="#">TOP</a></div>
-<%--<div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>--%>
 
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-<script>
-    function sample5_execDaumPostcode() {
-        new daum.Postcode({
-            oncomplete: function(data) {
-                var addr = data.address; // 최종 주소 변수
-
-                // 주소 정보를 해당 필드에 넣는다.
-                document.getElementById("address").value = addr;
-                document.getElementById('postcode').value = data.zonecode;
-            }
-        }).open();
-    }
-</script>
 </body>
 
 </html>
