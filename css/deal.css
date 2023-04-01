@@ -138,6 +138,7 @@ img {
     color: #fff;
     font-size: 17px;
     border-radius: 5px;
+    cursor: pointer;
 }
 #btn_pay {
    width: 200px;
@@ -147,6 +148,7 @@ img {
     color: #ffbf00;
     font-size: 17px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .total_price {
     font-size: 30px;

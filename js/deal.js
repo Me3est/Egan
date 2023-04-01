@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.layer').css({display:'none'})
     })
     $(document).on('click', '#logChk_commit_btn', function() {
-        location.href="http://localhost:8080/egan/login"
+        location.href="login.html"
     })
     // 장바구니 팝업
     $(document).on('click', '#cart_stay_btn', function() {
@@ -197,6 +197,6 @@ function load_data(cate, item) {
     $('.o_price').text(Number(rs.o_price).toLocaleString('ko')+"원");
     $('.s_price').text(Number(rs.s_price).toLocaleString('ko')+"원");
     $('.total_price').text(Number(rs.s_price).toLocaleString('ko')+"원");
-    $('#item_ex > img').attr('src', rs.src);
-    $('#item_ex_dt > img').attr('src', rs.src);
+    $('#item_ex > img').attr('src', rs.detail_src);
+    $('#item_ex_dt > img').attr('src', rs.detail_src2);
 }
