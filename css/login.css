@@ -1,7 +1,6 @@
 body {
     margin: 0;
 }
-
 ul,
 a {
     list-style: none;
@@ -9,12 +8,10 @@ a {
     color: black;
     padding: 0;
 }
-
 input {
     outline: none;
     list-style: none;
 }
-
 .wrap {
     width: 400px;
     margin: 138px auto;
@@ -23,13 +20,11 @@ input {
     box-sizing: border-box;
     text-align: center;
 }
-
 .login_text {
 font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 .id,
 .pw {
     width: 100%;
@@ -39,9 +34,7 @@ font-size: 22px;
     box-sizing: border-box;
     border: 1px solid lightgray;
     border-radius: 5px;
-
 }
-
 .find_wrap {
     width: 100%;
     height: 25px;
@@ -50,33 +43,29 @@ font-size: 22px;
     justify-content: space-between;
     font-size: 12px;
     margin-bottom: 8px;
-
 }
-
 .remember {
     display: inline;
-
 }
-
+input[id="keep"] {
+    position: relative;
+    top: 1.5px;
+}
 label {
     cursor: pointer;
 }
-
 .find_info {
     display: inline;
 }
-
 .find_info>a {
     margin-left: 5px;
 }
-
 .find_id::after {
     content: "";
     height: 20px;
     border-right: 1px solid lightgray;
     margin-left: 10px;
 }
-
 .login,
 .join {
     width: 100%;
@@ -91,7 +80,6 @@ label {
     font-weight: 600;
     cursor: pointer;
 }
-
 .join {
     background-color: #fff;
     border: 1px solid;
